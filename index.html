@@ -1,20 +1,236 @@
-<!DOCTYPE html>
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
 <head>
-	<title>
-		ние сервираме
-	</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Yemekhane an Restaurant Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Yemekhane Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.1.min.js"></script>
+<!----requred-js-files---->
+<!----//requred-js-files---->
+<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!----Calender -------->
+  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
+  <script src="js/underscore-min.js"></script>
+  <script src= "js/moment-2.2.1.js"></script>
+  <script src="js/clndr.js"></script>
+  <script src="js/site.js"></script>
+<!----End Calender -------->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 </head>
 <body>
-<div class="container">
-  <div class="jumbotron">
-    <h1>Ние  сервираме</h1> 
-    <p>Нашата цел е да се чуствувате величенствено во секој поглед на вашите прослави, затоа НИЕ СЕРВИРАМЕ !</p> 
-  </div>
-  <p>Можете да видите во галеријата како ние го  правиме тоа</p> 
+<div class="header" id="home">
+	<div class="container"> 
+		<div class="logo">
+           <h1>Nie servirame</h1>
+		</div>
+	</div>
 </div>
+<div class="header-home">
+	<div class="container">
+	  <div class="fixed-header">
+	     <div class="h_menu4"><!-- start h_menu4 -->
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li class="active"><a href="#home" class="scroll">Дома</a></li>				    				
+					<li><a href="#announce" class="scroll">Најави</a></li>
+					<li><a href="#gallery" class="scroll">Галерија</a></li>
+					<li><a href="#about" class="scroll">За нас</a></li>
+					<li><a href="#contact" class="scroll">Контакт</a></li>
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>		
+				 <!--script-->
+		<script>
+			$(document).ready(function(){
+				$(".nav li a").click(function(){
+					$(this).parent().addClass("active");
+					$(this).parent().siblings().removeClass("active");
+				});
+			});
+		</script>
+			<!-- script-for sticky-nav -->
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-home").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-home").addClass("fixed");
+				}else{
+					$(".header-home").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+        </div><!-- end h_menu4 -->
+       </div>
+       </div>
+     </div>
+<div class="main">
+   <div class="container">
+   	<div class="announce" id="announce">
+	  <h1 class="tz-title-4 tzcolor-blue">
+         <span class="tzweight_Bold">Најави</span>
+      </h1>
+      <div class="section_group"> 
+      <h2>Нема нови најави</h2>
+      	<!--<div class="col_1_of_5 span_1_of_5">
+      		<div class="col_1"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>
+      		<div class="desc">
+      			<h3><a href="#">Baked Chicken
+                B on the menu !</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag...</p>
+      		</div>
+        </div>
+        <div class="col_1_of_5 span_1_of_5 last">
+      		<div class="col_1"><img src="images/pic2.jpg" class="img-responsive" alt=""/></div>
+      		<div class="desc">
+      			<h3><a href="#">Pay attention to the 
+       dinner table layout.</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag...</p>
+      		</div>
+        </div>
+        <div class="col_1_of_5 span_1_of_5">
+      		<div class="col_1"><img src="images/pic3.jpg" class="img-responsive" alt=""/></div>
+      		<div class="desc">
+      			<h3><a href="#">Ispanaklı Piliç
+				Comming Soon.</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag...</p>
+      		</div>
+        </div>
+        <div class="col_1_of_5 span_1_of_5">
+      		<div class="col_1"><img src="images/pic4.jpg" class="img-responsive" alt=""/></div>
+      		<div class="desc">
+      			<h3><a href="#">Dinner table
+                 consept amet.</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag...</p>
+      		</div>
+        </div>
+       <div class="col_1_of_5 span_1_of_5">
+      		<div class="col_1"><img src="images/pic5.jpg" class="img-responsive" alt=""/></div>
+      		<div class="desc">
+      			<h3><a href="#">“Tiramisu”
+                 on the menu.
+                </a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag...</p>
+      		</div>
+        </div>
+        <div class="clearfix"> </div>
+      </div> -->
+      </div>
+      			 	 			 	 
+      </div>
+      <div class="gallery" id="gallery">
+      	<h3 class="tz-title-2">
+          <span class="tzweight_Bold">Галерија</span>
+        </h3>
+        <div class="gallery_box">
+        	<div class="col_1_of_5 span_1_of_5 grid_3">
+        		<img src="images/g1.jpg" class="img-responsive" alt=""/>
+        	</div>
+        	<div class="col_1_of_5 span_1_of_5 grid_3">
+        		<img src="images/g2.jpg" class="img-responsive" alt=""/>
+        	</div>
+        	<div class="col_1_of_5 span_1_of_5 grid_3">
+        		<img src="images/g3.jpg" class="img-responsive" alt=""/>
+        	</div>
+        	<div class="col_1_of_5 span_1_of_5 grid_3 last">
+        		<img src="images/g4.jpg" class="img-responsive" alt=""/>
+        	</div>
+        	<div class="col_1_of_5 span_1_of_5 grid_3">
+        		<img src="images/g5.jpg" class="img-responsive" alt=""/>
+        	</div>
+        	<div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="about" id="about">
+      	<h3 class="tz-title-2">
+          <span class="tzweight_Bold">За нас</span>
+        </h3>
+        <div class="about_desc">          
+          <p>Ние сервираме, за вие да се чуствувате величествено. Уште како дете кога приготвував некоја сопствена прослава, губев саати на тоа како ги виткав
+          салфетиките, на тоа како изгледа тоа што е поставено на маса и во која форма е тоа направено. На некој начин во тоа гледав уметност а не само
+          храна која е сервирана за луѓето, или салфетки кои потоа ќе се фрлат. И некако тоа ми остана низ годините како пасија, како начин да се изразам.
+          Сега кога потпораснав, сум сигурна дека тоа како е сервирано има врска. Една мала случка која ме убеди во тоа: Една постара жена на пазар продаваше
+          урда. Многу вкусна и квалитетна, но сепак никој не купуваше од кај нејзе. Урда и беше презентирана во НОКШИР. Чист нов(некористен) нокшир.
+          Сепак е нокшир. Тогаш сватив колку голема улога игра како е све сервирано</p>
+          <p class="about_para">Затоа не бидете "жената со нокширот", засекирајте се како све изгледа и повикајте не</p>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+      	 <h3 class="tz-title-2">
+          <span class="tzweight_Bold">Контакт</span>
+        </h3>
+        <div class="contact_box">
+        	<div class="col-md-6 contact_form">
+        		<form action="angela.taneska91@hotmail.com">
+					<div class="column_2">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:2.7%">
+					 	
+					</div>
+					<div class="column_3">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+	                </div>
+	                <div class="form-submit1">
+			           <label class="btn btn-primary btn-normal btn-inline " target="_self"><input type="submit" value="Send"></label>
+					</div>
+					<div class="clearfix"> </div>
+				  </form>
+        	</div>
+        	<div class="col-md-6">
+        	<br/>        	
+        		<div><h3>Контакт телефон:</h3> 078 - 622 - 435</div>
+        		<br/>
+        		<br/>
+        		<div><h3>Фејсбук:</h3>https://www.facebook.com/serviranjena.proslavi.5</div>
+        		<br/>
+        		<br/>
+        		<div><h3>E - mail:</h3> angela.taneska91@hotmail.com</div>        		
+        	</div>
+        	<div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="copy">
+          <p>Copyright © 2015 Template by<a href="http://w3layouts.com/" target="_blank"> W3layouts</a> </p>
+	  </div>
+	  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>     
 </body>
 </html>
