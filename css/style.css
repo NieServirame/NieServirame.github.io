@@ -38,7 +38,7 @@ body a{
 }
 .logo h1{
 	font-family: cyrillic;
-	font-size: 700%;
+	font-size: 10vw;
 }
 /* start h_menu */
 .toggleMenu {
