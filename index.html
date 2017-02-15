@@ -184,7 +184,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </h3>
         <div class="contact_box">
         	<div class="col-md-6 contact_form">
-        		<form action="angela.taneska91@hotmail.com">
+        		<form action="mailto:angela.taneska91@hotmail.com" method="post" enctype="text/plain" class="one_form">
 					<div class="column_2">
                      	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
 					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:2.7%">
@@ -194,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
 	                </div>
 	                <div class="form-submit1">
-			           <label class="btn btn-primary btn-normal btn-inline " target="_self"><input type="submit" value="Send"></label>
+			           <label class="btn btn-primary btn-normal btn-inline " target="_self"><input class="submit-form" type="submit" value="Send"></label>
 					</div>
 					<div class="clearfix"> </div>
 				  </form>
@@ -227,8 +227,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							*/
 							
 							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
+							$('.submit-form').click(function () {
+								$('.one_form').val("");
+							});
+						});						
 					</script>
 				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>     
